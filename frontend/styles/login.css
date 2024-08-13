@@ -1,8 +1,14 @@
+:root{
+    --branco: #fff;
+    --azul_fundo: #03101C;
+    --cinza_claro: #c8c8c8
+}
+
 *{margin: 0;}
 
 body {
-    background-color: #03101C;
-    color: #fff;
+    background-color: var(--azul_fundo);
+    color: var(--branco);
     font-family: sans-serif;
     display: flex;
     justify-content: space-between;
@@ -18,10 +24,8 @@ body {
     
 }
 .form-login {
-margin: auto;
-
-
-
+    margin: auto;
+    width: 60%;
 }
 
 h1 {
@@ -39,14 +43,17 @@ label {
 }
 
 input {
-    border-bottom: 2px solid rgb(200 , 200, 200);
-    padding: 10px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    background-color: #222;
+    width: 80%;
+    border-bottom: 2px solid #c8c8c8;
+    padding: 10px; margin: 0 auto;
+    border: 0px;
+    border-bottom: 2px solid #D600FF;
+    background-color: transparent;
     color: #fff;
-   
-   
+}
+
+input::placeholder {
+    color: #ffffff;
 }
 
 .btn { /*botão login*/
@@ -70,8 +77,7 @@ input {
     border-radius: 200px 0 0 200px;
     padding: 150px;
     height: 60%;
-    max-width: 400px;
-    
+    max-width: 400px;   
 }
 
 h2 {
@@ -85,7 +91,6 @@ h2 {
     display: block;
     margin: 0 auto;
     margin-bottom: 20px;
-    
 }
 
 .logo svg {
@@ -104,19 +109,25 @@ a:hover {
 }
 
 .lembrar-de-mim {
+    width: 50%;
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin: 0px auto 15px 25px
+}
+
+#confirmacao-lembrar{
+    width: max-content;
+    margin: 0px 10px 0px 0px;
 }
 
 .remember input {
     margin-right: 5px;
-   
 }
+
 .Esqueceu-Senha{
     color: #2051FF;
-    
 }
+
 .btn-cadastrar{ /*botão cadastrar*/
     border: none;
     background-color:rgb(255, 255, 255);
@@ -124,5 +135,4 @@ a:hover {
     font-size:medium;
     border-radius: 5px;
     padding: 10px;
-    
 }
