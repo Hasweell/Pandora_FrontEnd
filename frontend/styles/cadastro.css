@@ -1,0 +1,93 @@
+:root{
+  --branco: #fff;
+  --azul_fundo: #03101C;
+  --cinza_claro: #c8c8c8
+}
+
+*{margin: 1;}
+
+body {
+  background-color: var(--azul_fundo);
+  color: var(--branco);
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+  .left { /* borda esquerda */
+    background: linear-gradient(90deg, #0D365C 0%, #05808C 100%);
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 200px;
+    border-radius: 0px 280px 280px 0px;
+
+  }
+ 
+  .right { /* Cadastro*/
+    width: 45%;
+    padding: 100px;
+    height: 80%;
+    max-width: 600px;   
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .butao {  /*cadastrar */
+    background-color: #6BE9F3;
+    color: #03101C;
+    border: none;
+    padding: 10px 80px;
+    border-radius: 5px;
+    position: absolute;
+    left: 80%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+  }
+  .bubu { /* login */
+    background-color: #FFFFFF;
+    color: #005678;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+  }
+  
+input::placeholder {
+  color: #ffffff;
+}
+
+  button:hover {
+    background-color: #3710e7;
+  }
+  
+  .form-group {  
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px; margin: 0 auto;
+    border: 0px solid #005678;
+    border-bottom: 2px solid #005678;
+    background-color: transparent;
+
+  }
+  
+ 
